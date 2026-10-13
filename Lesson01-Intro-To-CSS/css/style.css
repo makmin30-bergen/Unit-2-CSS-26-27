@@ -1,0 +1,11 @@
+body {
+    background-color: #101A2b;
+    color: rgb(221, 184, 184);
+}
+.stats {
+    background-color: rgb(226, 226, 185);
+    color: black
+}
+#player {
+    background-color: limegreen;
+}
