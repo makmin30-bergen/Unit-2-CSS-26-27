@@ -1,0 +1,83 @@
+/* style.css · squad page (after Lesson 2A) */
+
+body {
+    background-color: #101A2B;
+    color: #EAF0F7;
+}
+
+h1 {
+    color: #5ADB8C;
+    font-size: 40px;
+}
+
+.tag {
+    background-color: #2B3F5F;
+    color: #5ADB8C;
+}
+
+/* group: every <h2> AND every <h3> */
+h2, h3 {
+    color: #F2B705;
+}
+
+/* class selector: every class="player-card" */
+.player-card {
+    border: 1px solid #2B3F5F;
+    padding: 4px 14px;
+    margin: 10px 0;
+}
+
+/* id selector: the one id="captain" */
+#captain {
+    border: 2px solid #F2B705;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.join {
+    background-color: green;
+    border-color: green;
+}
+
+.join:hover {
+    background-color: aqua;
+}
+
+.join:active {
+    transform: scale(.9);
+}
+
+.join:focus {
+    outline: 3px solid purple;
+}
+
+/* .results li:first-child {
+    background-color: yellow;
+}
+.results li:last-child {
+    background-color: red;    
+}
+
+.results li:nth-child(even) {
+    color: purple;    
+}
+
+.results li:nth-child(odd) {
+    color: orange;    
+}
+
+.results li:nth-child(3) {
+    background-color: green;    
+} */
+
+.results li:nth-child(3n) {
+    background-color: green;    
+}
+.results li:nth-child(4n+2) {
+    color: red;    
+}
+
+

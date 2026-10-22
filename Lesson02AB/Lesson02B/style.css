@@ -41,3 +41,7 @@ h2, h3 {
 nav a {
     color: #97f891;
 }
+
+li + li {
+    border-top: 1px solid #d7d768;
+}
