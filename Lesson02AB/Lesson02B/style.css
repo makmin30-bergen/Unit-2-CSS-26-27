@@ -45,3 +45,6 @@ nav a {
 li + li {
     border-top: 1px solid #d7d768;
 }
+li ~ li {
+    border-top: 1px solid green;
+}

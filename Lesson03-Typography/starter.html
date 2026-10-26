@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch 7.3 Notes · Nova Arena</title>
+    <!-- STEP 1 ▸ paste the Google Fonts lines here -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p class="eyebrow">Nova Arena · Patch 7.3</p>
+        <h1>Patch Notes</h1>
+        <p class="tagline">Season 7 balance update · October 2026</p>
+        <nav>
+            <a href="#heroes">Heroes</a>
+            <a href="#maps">Maps</a>
+            <a href="#fixes">Bug fixes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="heroes">
+            <h2>Hero changes</h2>
+            <p>This patch slows down the fastest heroes and gives support players more ways to help their team. Every
+                change below was tested in more than 2,000 ranked matches before it shipped.</p>
+
+            <h3>NovaBlade</h3>
+            <p>Dash cooldown goes from 6 seconds to 8 seconds. NovaBlade could cross the whole map before anyone
+                reacted, and players told us that close games felt decided in the first minute.</p>
+
+            <h3>PixelFox</h3>
+            <p>Shield now lasts 4 seconds instead of 3, and it can cover two teammates at once. Support players asked
+                for a bigger moment in team fights, and this is it.</p>
+        </section>
+
+        <section id="maps">
+            <h2>Map updates</h2>
+            <p>Glitch City gets a new middle lane with two ways in and one way out. The old lane was too easy to defend,
+                so most matches stalled there for minutes at a time.</p>
+            <blockquote>“We want every lane to have a reason to fight over it.” — Lead map designer</blockquote>
+        </section>
+
+        <section id="fixes">
+            <h2>Bug fixes</h2>
+            <ul>
+                <li>Fixed a bug where Byte could walk through the north wall.</li>
+                <li>The scoreboard no longer shows a negative number of wins.</li>
+                <li>Sound effects play again after you leave the pause menu.</li>
+                <li>The chat box no longer covers the minimap on small screens.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Nova Arena · Team Nova reads every bug report.</p>
+    </footer>
+    <style>
+        .btcs-tab {
+            position: fixed;
+            right: 12px;
+            bottom: 12px;
+            z-index: 2147483647;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin: 0;
+            font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, sans-serif
+        }
+
+        .btcs-tab a,
+        .btcs-tab button {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            padding: 0 14px;
+            border: 1px solid #14171f;
+            border-radius: 999px;
+            background: #fff;
+            color: #14171f;
+            text-decoration: none;
+            cursor: pointer;
+            font: inherit;
+            box-shadow: 0 2px 8px rgb(0 0 0/.25)
+        }
+
+        .btcs-tab a:focus-visible,
+        .btcs-tab button:focus-visible {
+            outline: 3px solid #1a56db;
+            outline-offset: 2px
+        }
+
+        .btcs-tab form {
+            margin: 0
+        }
+
+        .btcs-tab.btcs-back {
+            right: auto;
+            left: 12px;
+            opacity: .6
+        }
+
+        .btcs-tab.btcs-back:hover,
+        .btcs-tab.btcs-back:focus-within {
+            opacity: 1
+        }
+
+        .btcs-tab.btcs-back a {
+            width: 44px;
+            justify-content: center;
+            padding: 0;
+            font-size: 20px
+        }
+
+        .btcs-tab.btcs-back .btcs-tip {
+            display: none;
+            padding: 8px 14px;
+            border: 1px solid #14171f;
+            border-radius: 999px;
+            background: #fff;
+            color: #14171f;
+            white-space: nowrap;
+            pointer-events: none;
+            box-shadow: 0 2px 8px rgb(0 0 0/.25)
+        }
+
+        .btcs-tab.btcs-back a:hover+.btcs-tip,
+        .btcs-tab.btcs-back a:focus-visible+.btcs-tip {
+            display: inline-block
+        }
+
+        @media print {
+            .btcs-tab {
+                display: none
+            }
+        }
+    </style>
+    <nav class="btcs-tab" aria-label="Class"><a href="/period-9/">&larr; Period 9</a>
+        <form method="post" action="/logout"><button type="submit">Sign out</button></form>
+    </nav>
+</body>
+
+</html>
