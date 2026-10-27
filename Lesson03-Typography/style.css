@@ -43,7 +43,8 @@ li + li {
 /* STEP 1 ▸ the two fonts: body, then h1, h2, h3 */
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
 }
 
 /* h1, h2, h3 {
@@ -53,15 +54,32 @@ body {
 
 
 h1, h2, h3 {
-    font-family: 'JetBrains Mono', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
 }
+h1 {
+    font-size: 3rem
+}
+h2 {
+    font-size: 2rem /* root element */
+}
+p {
+    line-height: 2.5; /* Gap between the lines in "p" */
+}
+
 
 
 
 /* STEP 2 ▸ sizes in rem, room between the lines */
 
 /* STEP 3 ▸ small uppercase labels: .eyebrow and nav a */
+
+.eyebrow, nav a {
+    text-transform: uppercase; /* change case */
+    letter-spacing: 0.12em; /* space between letters */
+    font-size: 0.9rem;
+    font-weight: 900; /* 100 - 900 boldness */
+}
 
 /* CHECK ▸ every paragraph easy to read from your seat? */
 
