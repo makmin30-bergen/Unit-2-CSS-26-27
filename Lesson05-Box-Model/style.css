@@ -118,10 +118,17 @@ padding: 1px 2px 3px 4px; top right bottom left */
 
 /* STEP 3 ▸ count padding and border inside the width */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* if not, padding will escape the width */
 }
 /* STEP 4 ▸ room below the notice */
 .notice {
     margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* will apply biggest one */
+
+.notice {
+    margin-top: 16px;
     margin-bottom: 24px;
 }
