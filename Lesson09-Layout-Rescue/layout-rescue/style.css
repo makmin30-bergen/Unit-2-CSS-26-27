@@ -130,9 +130,8 @@ footer {
 
 /* SECTION 1 - nav: logo on the left, links on the right,
    both centered up and down. The 4 links sit in a row. */
-/* why: */
+/* why: flexbox allows you to move flex items to the end of the row and align them to the center*/
 .nav {
-   display: grid;
 }
 
 .links {
@@ -143,7 +142,7 @@ footer {
 
 /* SECTION 2 - hero: title, line and button stacked in a
    column, centered left-right AND up-down in the green box. */
-/* why: */
+/* why: Flexbox allows you to center elements and arrange them in a column*/
 .hero {
    display: flex;
    flex-direction: column;
@@ -155,7 +154,7 @@ footer {
 
 /* SECTION 3 - features: 3 cards in one row, equal widths,
    24px apart. */
-/* why: */
+/* why: Grid allows you to make elements an equal size using "grid-template-columns"*/
 .features {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -166,7 +165,7 @@ footer {
 }
 
 /* SECTION 4 - gallery: 3 columns, 2 rows, 16px gaps. */
-/* why: */
+/* why: Grid allows you to easily arrange items in equal rows and columns and make them the same size*/
 .gallery {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -175,7 +174,7 @@ footer {
 
 /* SECTION 5 - bento: 4 columns. The big tile is 2 columns
    wide and 2 rows tall; the 4 small tiles fill the rest. */
-/* why: */
+/* why: Grid allows you make things different sizes using "grid-template-columns" and also make elements take up multiple rows or columns*/
 .bento {
    display: grid;
    grid-template-columns: 2fr 1fr 1fr;
@@ -189,7 +188,7 @@ footer {
 
 /* SECTION 6 - footer: 3 columns, the first at the left edge,
    the last at the right edge; they wrap when the window is narrow. */
-/* why: */
+/* why: Grid allows you to arrange elements using "grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))" */
 .footer {
    display: grid ;
    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
